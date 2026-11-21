@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Anyam Studio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Toko online perlengkapan rumah, fashion, aksesori, dan elektronik pilihan. Gratis ongkir untuk belanja di atas Rp500.000.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 8h12l1 12H5z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-return" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 1 3 6.2"/><path d="M4 18v-5h5"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M16 15h2"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path style="fill:currentColor;stroke:none" d="M12 3.5l2.7 5.6 6.1.8-4.5 4.2 1.1 6-5.4-3-5.4 3 1.1-6L3.2 9.9l6.1-.8z"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<a class="skip" href="#katalog">Lewati ke katalog</a>
+
+<div class="announce">
+  <div class="wrap announce-in">
+    <svg class="i"><use href="#i-truck"/></svg>
+    <p>Gratis ongkir reguler untuk belanja di atas <b>Rp500.000</b>. Pakai kode <code>ANYAM10</code> untuk diskon 10%.</p>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="logo" href="#top" aria-label="Anyam Studio, ke beranda">
+      <svg class="logo-mark" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="9" height="9" rx="2" fill="var(--accent)"/><rect x="13" y="2" width="9" height="9" rx="2" fill="var(--ink)"/><rect x="2" y="13" width="9" height="9" rx="2" fill="var(--ink)"/><rect x="13" y="13" width="9" height="9" rx="2" fill="var(--accent)"/></svg>
+      <span>anyam</span>
+    </a>
+    <nav class="nav" aria-label="Utama">
+      <a href="#promo">Promo</a>
+      <a href="#kategori">Kategori</a>
+      <a href="#katalog">Semua produk</a>
+    </nav>
+    <form class="search" role="search" id="searchForm">
+      <label class="sr" for="q">Cari produk</label>
+      <svg class="i"><use href="#i-search"/></svg>
+      <input id="q" type="search" placeholder="Cari lampu, sepatu, headphone…" autocomplete="off">
+      <kbd aria-hidden="true">/</kbd>
+    </form>
+    <div class="actions">
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Ganti tema"><svg class="i" id="themeIcon"><use href="#i-moon"/></svg></button>
+      <button class="icon-btn" id="wishBtn" type="button" aria-label="Favorit" aria-pressed="false"><svg class="i"><use href="#i-heart"/></svg><span class="badge" id="wishCount" hidden>0</span></button>
+      <button class="icon-btn" id="cartBtn" type="button" aria-label="Buka keranjang"><svg class="i"><use href="#i-bag"/></svg><span class="badge" id="cartCount" hidden>0</span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <p class="eyebrow">Koleksi Oktober 2026</p>
+        <h1>Barang yang enak dilihat, <span class="mark">awet</span> dipakai tiap hari.</h1>
+        <p class="lead">Empat belas produk pilihan untuk rumah, kerja, dan perjalanan. Dipilih satu per satu, dikirim ke seluruh Indonesia.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#katalog">Belanja sekarang <svg class="i"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-ghost" href="#promo">Lihat promo hari ini</a>
+        </div>
+        <ul class="perks-inline">
+          <li><svg class="i"><use href="#i-shield"/></svg>Garansi 30 hari</li>
+          <li><svg class="i"><use href="#i-wallet"/></svg>Bisa COD</li>
+          <li><svg class="i"><use href="#i-return"/></svg>Retur mudah</li>
+        </ul>
+      </div>
+      <div class="collage" id="collage" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="band" aria-label="Keunggulan">
+    <div class="wrap perks">
+      <div><svg class="i"><use href="#i-truck"/></svg><p><b>Kirim 1 sampai 4 hari</b><span>Reguler atau ekspres ke 38 provinsi</span></p></div>
+      <div><svg class="i"><use href="#i-shield"/></svg><p><b>Garansi 30 hari</b><span>Barang cacat produksi kami ganti</span></p></div>
+      <div><svg class="i"><use href="#i-wallet"/></svg><p><b>QRIS, transfer, COD</b><span>COD untuk pesanan sampai Rp2.000.000</span></p></div>
+      <div><svg class="i"><use href="#i-return"/></svg><p><b>Retur 7 hari</b><span>Tanpa ribet, selama kemasan utuh</span></p></div>
+    </div>
+  </section>
+
+  <section class="section" id="kategori" aria-labelledby="h-kat">
+    <div class="wrap">
+      <header class="sec-head">
+        <div><p class="eyebrow">Jelajahi</p><h2 id="h-kat">Belanja per kategori</h2></div>
+      </header>
+      <div class="cats" id="cats"></div>
+    </div>
+  </section>
+
+  <section class="section promo" id="promo" aria-labelledby="h-promo">
+    <div class="wrap">
+      <header class="sec-head">
+        <div><p class="eyebrow">Berakhir tengah malam</p><h2 id="h-promo">Promo hari ini</h2></div>
+        <div class="countdown" role="timer" aria-label="Sisa waktu promo">
+          <span><b id="cdH">00</b><i>jam</i></span><span><b id="cdM">00</b><i>menit</i></span><span><b id="cdS">00</b><i>detik</i></span>
+        </div>
+      </header>
+      <div class="grid" id="promoGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="katalog" aria-labelledby="h-kat2">
+    <div class="wrap">
+      <header class="sec-head">
+        <div><p class="eyebrow">Katalog</p><h2 id="h-kat2">Semua produk</h2></div>
+      </header>
+      <div class="toolbar">
+        <div class="chips" id="chips" role="group" aria-label="Filter kategori"></div>
+        <div class="tools">
+          <label class="range" for="maxPrice">
+            <span>Harga maks. <b id="maxLabel">Rp2.500.000</b></span>
+            <input id="maxPrice" type="range" min="100000" max="2500000" step="50000" value="2500000">
+          </label>
+          <label class="select" for="sort">
+            <span class="sr">Urutkan</span>
+            <select id="sort">
+              <option value="rekomendasi">Rekomendasi</option>
+              <option value="termurah">Harga terendah</option>
+              <option value="termahal">Harga tertinggi</option>
+              <option value="rating">Rating tertinggi</option>
+              <option value="diskon">Diskon terbesar</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <p class="count" id="count" aria-live="polite"></p>
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" hidden>
+        <p><b>Tidak ada produk yang cocok.</b></p>
+        <p>Coba kata kunci lain, naikkan batas harga, atau pilih semua kategori.</p>
+        <button class="btn btn-ghost" id="resetBtn" type="button">Atur ulang filter</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="news">
+    <div class="wrap news-in">
+      <div>
+        <p class="eyebrow">Surat dari Anyam</p>
+        <h2>Dapat kabar produk baru lebih dulu.</h2>
+        <p>Satu email setiap dua minggu. Isinya produk baru dan kode promo, tanpa spam.</p>
+      </div>
+      <form class="news-form" id="newsForm" novalidate>
+        <label class="sr" for="newsEmail">Alamat email</label>
+        <input id="newsEmail" type="email" placeholder="nama@email.com" autocomplete="email">
+        <button class="btn btn-accent" type="submit">Berlangganan</button>
+        <p class="news-msg" id="newsMsg" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div class="foot-brand">
+      <p class="logo"><svg class="logo-mark" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="9" height="9" rx="2" fill="var(--accent)"/><rect x="13" y="2" width="9" height="9" rx="2" fill="currentColor"/><rect x="2" y="13" width="9" height="9" rx="2" fill="currentColor"/><rect x="13" y="13" width="9" height="9" rx="2" fill="var(--accent)"/></svg><span>anyam</span></p>
+      <p>Toko demo untuk perlengkapan sehari-hari. Tidak ada pembayaran atau pengiriman nyata di halaman ini.</p>
+    </div>
+    <div><h3>Belanja</h3><ul><li><a href="#promo">Promo hari ini</a></li><li><a href="#kategori">Kategori</a></li><li><a href="#katalog">Semua produk</a></li></ul></div>
+    <div><h3>Bantuan</h3><ul><li>Cara pemesanan</li><li>Pengiriman</li><li>Retur dan garansi</li></ul></div>
+    <div><h3>Pembayaran</h3><ul><li>QRIS</li><li>Transfer bank</li><li>Bayar di tempat (COD)</li></ul></div>
+  </div>
+  <div class="wrap foot-end"><p>© 2026 Anyam Studio. Semua harga dalam Rupiah.</p></div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true">
+  <header class="drawer-head">
+    <h2 id="drawerTitle">Keranjang <span id="drawerCount"></span></h2>
+    <button class="icon-btn" type="button" data-close aria-label="Tutup keranjang"><svg class="i"><use href="#i-close"/></svg></button>
+  </header>
+  <div class="ship" id="shipBar"></div>
+  <div class="drawer-body" id="cartList"></div>
+  <footer class="drawer-foot" id="cartFoot"></footer>
+</aside>
+
+<div class="modal" id="quick" role="dialog" aria-modal="true" aria-labelledby="qTitle" aria-hidden="true">
+  <div class="panel panel-quick" id="quickPanel"></div>
+</div>
+
+<div class="modal" id="checkout" role="dialog" aria-modal="true" aria-labelledby="coTitle" aria-hidden="true">
+  <div class="panel panel-co">
+    <div class="co-main" id="coMain">
+      <header class="co-head">
+        <h2 id="coTitle">Checkout</h2>
+        <button class="icon-btn" type="button" data-close aria-label="Tutup checkout"><svg class="i"><use href="#i-close"/></svg></button>
+      </header>
+      <form id="coForm" novalidate>
+        <fieldset>
+          <legend>Alamat pengiriman</legend>
+          <div class="f2">
+            <div class="field"><label for="fName">Nama lengkap</label><input id="fName" name="name" autocomplete="name"><p class="err" data-err="name"></p></div>
+            <div class="field"><label for="fPhone">Nomor HP</label><input id="fPhone" name="phone" inputmode="tel" autocomplete="tel" placeholder="08xxxxxxxxxx"><p class="err" data-err="phone"></p></div>
+          </div>
+          <div class="field"><label for="fEmail">Email</label><input id="fEmail" name="email" type="email" autocomplete="email"><p class="err" data-err="email"></p></div>
+          <div class="field"><label for="fAddr">Alamat lengkap</label><textarea id="fAddr" name="addr" rows="2" autocomplete="street-address" placeholder="Jalan, nomor rumah, RT/RW, kelurahan"></textarea><p class="err" data-err="addr"></p></div>
+          <div class="f3">
+            <div class="field"><label for="fCity">Kota / kabupaten</label><input id="fCity" name="city" autocomplete="address-level2"><p class="err" data-err="city"></p></div>
+            <div class="field"><label for="fProv">Provinsi</label><select id="fProv" name="prov"></select><p class="err" data-err="prov"></p></div>
+            <div class="field"><label for="fZip">Kode pos</label><input id="fZip" name="zip" inputmode="numeric" maxlength="5" autocomplete="postal-code"><p class="err" data-err="zip"></p></div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Pengiriman</legend>
+          <div class="opts" id="shipOpts"></div>
+        </fieldset>
+        <fieldset>
+          <legend>Pembayaran</legend>
+          <div class="opts" id="payOpts"></div>
+        </fieldset>
+        <button class="btn btn-primary btn-wide" type="submit" id="payBtn">Buat pesanan</button>
+        <p class="demo-note">Ini toko demo. Pesanan tidak diproses dan tidak ada data yang dikirim ke mana pun.</p>
+      </form>
+    </div>
+    <aside class="co-side" id="coSide" aria-label="Ringkasan pesanan"></aside>
+  </div>
+</div>
+
+<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+
+<script src="app.js" defer></script>
+</body>
+</html>
